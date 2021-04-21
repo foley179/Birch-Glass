@@ -200,9 +200,6 @@ size is smaller (laptop, tablet, mobile) */
     .port-box p {
         margin-top: 0;
     }
-    .header, .about-me a {
-        color: rgb(38, 0, 255); /* mobile showing pink instead of red, making sure this uploads */
-    }
 }
 @media only screen and (max-width: 480px) {
     html {
