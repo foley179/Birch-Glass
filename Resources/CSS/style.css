@@ -200,6 +200,9 @@ size is smaller (laptop, tablet, mobile) */
     .port-box p {
         margin-top: 0;
     }
+    .process ul {
+        padding-left: 10px;
+    }
 }
 @media only screen and (max-width: 480px) {
     html {
