@@ -1,0 +1,215 @@
+
+/* universal */
+html {
+    background-image: url(../Images/main_bg.gif);
+    background-repeat: repeat;
+    font-size: 18px;
+    font-family: "Crimson Text", serif;
+    color: seashell;
+    letter-spacing: 0.05rem;
+}
+
+.body {
+    margin: 0 auto;
+    width: 1000px;
+}
+body {
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* header */
+header {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    text-align: center;
+}
+
+.header {
+    color: rgba(205, 8, 17, 1);
+    text-decoration: underline;
+    display: inline;
+    margin: 0;
+    font-size: 3.5rem;
+    min-width: 320px;
+}
+
+header img {
+    margin-right: 5px;
+    max-height: 80px;
+    border-radius: 50%;
+}
+
+/* nav */
+nav {
+    border-radius: 15px;
+    height: 70px;
+    padding-bottom: 7px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 40px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    font-size: 2rem;
+    color: seashell;
+}
+
+a:hover {
+    color: rgba(205, 8, 17, 1);
+}
+
+/* description */
+.desc-bg {
+    margin: 40px auto;
+    background-image: url(../Images/landscape_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    text-align: center;
+    display: flex;
+}
+
+.desc {
+    margin: auto;
+    color: black;
+}
+
+.desc h2 {
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.desc p {
+    margin-top: 6px;
+    font-size: 1.25rem;
+}
+
+/* portfolio */
+.portfolio {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.port-head {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin: 0 20%;
+    text-align: center;
+}
+
+.port-head h2 {
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.port-head p {
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+    margin-top: 7px;
+}
+
+.port-box {
+    height: 250px;
+    width: 250px;
+    text-align: center;
+}
+
+.port-box img {
+    height: 80%;
+    width: 80%;
+}
+
+.port-box p {
+    margin-top: 5px;
+}
+
+/* process */
+.process {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+
+.process h2 {
+    text-align: center;
+    margin: 0;
+}
+
+/* footer */
+.about-me {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 0;
+    padding: 0 15px;
+}
+
+.about-me p {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.about-me h2{
+    padding-top: 10px;
+}
+
+.about-me a {
+    color: rgba(205, 8, 17, 1);
+    font-size: 1.25rem;
+}
+
+.about-me a:hover {
+    color: seashell;
+}
+
+
+/* use this and viewport meta to change display if screen
+size is smaller (laptop, tablet, mobile) */
+@media only screen and (max-width: 1024px) {
+    .body {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .body, .portfolio {
+        width: 100%;
+    }
+    header, nav, .desc-bg, .portfolio, .port-head {
+        margin: 20px auto;
+    }
+    .port-box {
+        width: 210px;
+        height: 210px;
+    }
+    .port-box p {
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+    .header {
+        min-width: 0;
+    }
+    .port-box {
+        width: 150px;
+        height: 150px;
+    }
+}
